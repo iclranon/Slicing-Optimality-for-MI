@@ -1,6 +1,6 @@
 # Sample code for two correlated Gaussians
 
-from DSI import DSI
+from SI* import SI*
 import torch
 import numpy as np
 import math
@@ -22,4 +22,4 @@ if __name__ == '__main__':
 
     rho=.9
     X,Y=sample_correlated_gaussian(rho=rho,dim=1,batch_size=500)
-    print(DSI(X,Y,num_slices=100))
+    print(SI*(X,Y,num_slices=100))
