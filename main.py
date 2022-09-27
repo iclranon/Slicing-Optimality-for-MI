@@ -1,6 +1,6 @@
 # Sample code for two correlated Gaussians
 
-from SI* import SI*
+from optimal_SI import optimal_SI
 import torch
 import numpy as np
 import math
@@ -22,4 +22,4 @@ if __name__ == '__main__':
 
     rho=.9
     X,Y=sample_correlated_gaussian(rho=rho,dim=1,batch_size=500)
-    print(SI*(X,Y,num_slices=100))
+    print(optimal_SI(X,Y,num_slices=100))
