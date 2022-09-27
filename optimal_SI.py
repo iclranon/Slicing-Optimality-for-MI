@@ -6,7 +6,7 @@ from utils import *
 
 
 # The optimal Sliced Mutual Information
-def SI* (X, Y, num_slices, omega_X=math.pi/4, omega_Y=math.pi/4, max_iter=2, lam=.6, lamMI=1., device="cpu"):
+def optimal_SI (X, Y, num_slices, omega_X=math.pi/4, omega_Y=math.pi/4, max_iter=2, lam=.6, lamMI=1., device="cpu"):
 
     f1 = Net(X[0].shape[0],Y[0].shape[0],X[0].shape[0]).to(device)
     f1_op = optim.Adam(f1.parameters(), lr=0.005, betas=(0.5, 0.999))
