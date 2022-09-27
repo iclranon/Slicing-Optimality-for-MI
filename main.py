@@ -1,3 +1,5 @@
+# Sample code for two correlated Gaussians
+
 from DSI import DSI
 import torch
 import numpy as np
